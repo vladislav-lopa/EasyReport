@@ -1,0 +1,47 @@
+{% extends 'base_template.html' %}
+{% block content %}
+    <div class="inner-bg">
+    <div class="container top-container-form">
+      <div class="col-md-8 ">
+            <center>
+              </center>
+                <form action="" method="post" class="form-inline">{% csrf_token %}
+                    <div class="form-group">
+                    <div class="col-5 offset-md-5 top-indent-form">
+                        <h5 class="change-word-color">Name</h5>
+                        <p align="center">{{ post.name_project }}</p>
+                        <h5 class="change-word-color">Key</h5>
+                        <p align="center">{{ post.key }}</p>
+                        <h5 class="change-word-color">Token</h5>
+                        <p align="center">{{ post.token }}</p>
+                        <h5 class="change-word-color">Todo id</h5>
+                        <p align="center">{{ post.todo_id }}</p>
+                        <h5 class="change-word-color">In progress id</h5>
+                        <p align="center">{{ post.in_progress_id }}</p>
+                        <h5 class="change-word-color">Code review id</h5>
+                        <p align="center">{{ post.code_review_id }}</p>
+                        <h5 class="change-word-color">In test id</h5>
+                        <p align="center">{{ post.in_test_id }}</p>
+                        <h5 class="change-word-color">Release id</h5>
+                        <p align="center">{{ post.release_id }}</p>
+                        <h5 class="change-word-color">Done id</h5>
+                        <p align="center">{{ post.done_id }}</p>
+                        <h5 class="change-word-color">Board id</h5>
+                        <p align="center">{{ post.board_id }}</p>
+                        <div class="col-5 offset-md-2 top-indent-form">
+                        <button type="button" class="btn btn-primary button-change-delete"><a class="words "
+                                href="{% url 'edit' post.pk %}">Change</a></button>
+                        </div>
+                        <div class="col-5 offset-md-11 top-indent-form">
+                        <button type="button" class="btn btn-primary button-change-delete"><a class="words "
+                                href="{% url 'delete' post.pk %}">Delete</a></button>
+                        </div>
+                    </div>
+                  </div>
+
+                </form>
+             </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

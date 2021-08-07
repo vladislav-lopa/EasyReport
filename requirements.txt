@@ -1,0 +1,2 @@
+requests==2.25.1
+replace==2020.12.3

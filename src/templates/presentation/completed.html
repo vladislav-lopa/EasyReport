@@ -1,0 +1,28 @@
+{% extends 'base_presentation.html' %}
+{% block content %}
+{% autoescape off %}
+    <div class="inner-bg">
+    <div class="container top-container">
+      <div class="col-md-12 ">
+            <center>
+              </center>
+                <form action="" method="post" class="form-inline">{% csrf_token %}
+                    <div class="form-group">
+                    <div class="col-12 top-indent">
+                        {{ post.completed }}
+                    </div>
+                  </div>
+                </form>
+             </div>
+      </div>
+    </div>
+<button class ='carousel-control-prev' type='button' data-bs-target='#carouselExampleDark' data-bs-slide='../page1.html'>
+	<a href='{% url "presentation:sprint_name" post.pk %}' class ='carousel-control-prev-icon' aria-hidden='true'></a>
+	<span class ='visually-hidden'>Previous</span>
+</button>
+<button class ='carousel-control-next' type='button'  data-bs-slide='../page1.html'>
+	<a href='{% url "presentation:task_in_release" post.pk %}' class ='carousel-control-next-icon' aria-hidden='true'></a>
+	<span class ='visually-hidden'>Next</span>
+</button>
+{% endautoescape %}
+{% endblock %}

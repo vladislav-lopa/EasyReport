@@ -1,0 +1,21 @@
+{% extends 'base_template.html' %}
+{% block content %}
+    <div class="inner-bg">
+    <div class="container top-container">
+      <div class="col-md-8 ">
+            <center>
+              </center>
+                <form action="" method="post" class="form-inline">{% csrf_token %}
+                    <div class="form-group">
+                    <div class="col-5 offset-md-6 top-indent">
+                        {% for config in form %}
+                        <button class="check-config"><a href="{% url 'presentation:presentation' config.pk %}"> {{ config.name_project }}</a></button>
+                        {% endfor %}
+                    </div>
+                  </div>
+
+                </form>
+             </div>
+      </div>
+    </div>
+{% endblock %}
