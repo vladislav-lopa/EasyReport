@@ -1,0 +1,131 @@
+body{
+    background-image: url(../images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-container{
+         margin-top: 8%;
+}
+
+.top-container-form{
+         margin-top: 3% !important;
+}
+
+.top-indent {
+    margin-top:10px;
+}
+
+h1{
+    font-family: Newsreader;
+}
+
+.title{
+    color: white;
+}
+
+.button-general {
+    margin-top: 20px;
+    width: 400px;	height: 35px; /* Размеры */
+    border-radius: 30px; /* Радиус скругления */
+    background: #e8643e !important;
+
+}
+
+.button-general:hover {
+    background: #ff7f50 !important ;
+}
+
+.nav-link{
+    font-size: 30px !important;
+    color: #E0D318;
+}
+
+.nav-link:hover{
+    color: #A2CE1E;
+}
+
+.topnav-right {
+  float: right !important;
+}
+
+h5{
+    text-decoration: none;
+}
+
+.user-name {
+    padding-top: 10px;
+    color: white;
+}
+
+.check-config{
+    width: 400px;	height: 35px; /* Размеры */
+    background: #fc0; /* Цвет фона */
+    border: 3px solid #fff; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+    margin-top: 10px;
+
+}
+
+.check-config:hover{
+    border-radius: 30px; /* Радиус скругления */
+    background: grey !important; /* Цвет фона */
+    margin-tom: 15px;
+}
+
+a{
+   text-decoration: none;
+}
+
+.color-for-button{
+    color: white;
+}
+
+.color-for-button:hover{
+    color: white;
+}
+
+p{
+    width: 600px;	height: 25px; /* Размеры */
+    border-radius: 10px; /* Радиус скругления */
+    background: #fc0; /* Цвет фона */
+    border: white; /* Белая рамка */
+}
+
+.change-word-color{
+    color: white;
+}
+
+.button-change-delete{
+    width: 200px;	 /* Размеры */
+    position: fixed;
+	bottom: 45px;
+}
+
+.words{
+    color: white;
+}
+
+.words:hover{
+    color:white;
+}
+
+.choose-presentation{
+    width: 800px;	height: 35px; /* Размеры */
+    background: #fc0; /* Цвет фона */
+    border: 3px solid #fff; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+    margin-top: 10px;
+
+}
+
+.choose-presentation:hover{
+    border-radius: 30px; /* Радиус скругления */
+    background: grey !important; /* Цвет фона */
+    margin-tom: 15px;
+}
